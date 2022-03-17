@@ -16,7 +16,7 @@ function App() {
   const [index, setIndex] = useState(0)
   const [vote, setVote] = useState(0)
 
-  var points = [null]
+  var points = []
 
   for (var i=0;anecdotes.length>i;i++){
     points[i] = 0
@@ -40,9 +40,6 @@ function App() {
 
       return handler
     }
-
-    const max = Math.max(points)
-    console.log(max)
     
   }
 
