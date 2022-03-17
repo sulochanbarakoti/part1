@@ -1,6 +1,7 @@
 import Content from './content';
 import Total from './total';
 import Header from './header';
+import Course from './course';
 
 const App = () => {
   const courses = 
@@ -52,9 +53,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header course ={courses}/>
-      <Content parts={courses.parts} />
-      <Total parts={courses.parts}/>
+      <Course course={courses}/>
+      {/* <Header course ={courses[0]}/>
+      <Content parts={courses[0].parts} />
+      <Total parts={courses[0].parts}/>
+      <Header course ={courses[1]}/>
+      <Content parts={courses[1].parts} />
+      <Total parts={courses[1].parts}/> */}
     </div>
   );
 }
